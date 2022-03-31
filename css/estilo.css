@@ -61,7 +61,9 @@ p {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto, auto, auto;
-  grid-template-areas: "afiliacion" "sucursales" "noticias";
+  grid-template-areas: "afiliacion"
+ "sucursales"
+ "noticias";
   row-gap: 2rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -200,7 +202,7 @@ section#noticias {
   list-style: none; }
 
 .icon-whatsapp {
-  background: #0D623B;
+  background: #0d633b;
   border-radius: 1rem 0 0 0; }
 
 .icon-facebook {
@@ -295,7 +297,9 @@ header {
 @media all and (max-width: 1024px) {
   .todo {
     grid-template-rows: repeat(5, auto);
-    grid-template-areas: "afiliacion" "sucursales" "noticias";
+    grid-template-areas: "afiliacion"
+ "sucursales"
+ "noticias";
     row-gap: 2rem; }
   header {
     width: 100%;
@@ -424,7 +428,9 @@ header {
 @media screen and (max-width: 600px) {
   .todo {
     grid-template-rows: repeat(5, auto);
-    grid-template-areas: "afiliacion" "sucursales" "noticias";
+    grid-template-areas: "afiliacion"
+ "sucursales"
+ "noticias";
     row-gap: 2rem; }
   header {
     width: 100%;

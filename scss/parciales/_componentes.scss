@@ -133,29 +133,21 @@
     list-style: none;
   }
   
-  .icon-whatsapp {
-    background: #0D623B;
-    border-radius: 1rem 0 0 0;
+  $redes: (
+   whatsapp: #55acee;\r\n
+   facebook: #005acf;
+   twitter: #17c0eb;
+   youtube: #fd3402;
+   instagram: #a421be;
+  );
+
+@each $clave, $valor in $redes {
+  .icon-#{$clave} {
+    color: $valor;
   }
-  
-  .icon-facebook {
-    background: #005acf;
-  }
-  
-  .icon-twitter {
-    background: #17c0eb;
-  }
-  .icon-youtube {
-    background: #fd3402;
-  }
-  .icon-instagram {
-    background: #a421be;
-    border-radius: 0 0 0 1rem;
-  }
-  
+}
   .icon:hover {
     padding-right: 3rem;
     border-radius: 1rem 0 0 1rem;
     box-shadow: 0 0 .5 rgba(0, 0, 0, 0.42);
   }
-  
